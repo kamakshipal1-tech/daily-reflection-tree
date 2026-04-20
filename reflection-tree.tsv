@@ -1,25 +1,25 @@
 id	parentId	type	text	options	target	signal
 START	null	start	Good evening. Let’s reflect on your day.			
-Q1	START	question	How was your day overall?	Productive|Stressful|Mixed|Unproductive		
-D1	Q1	decision				
-Q1_INT	D1	question	What contributed most?	My effort|My planning		
-Q1_EXT	D1	question	What affected your day most?	Other people|External issues		
+Q1	START	question	How was your day overall?	Productive|Stressful|Mixed|Unproductive			
+D1	Q1	decision					
+Q1_INT	D1	question	What contributed most?	My effort|My planning			
+Q1_EXT	D1	question	What affected your day most?	Other people|External issues			
 R1_INT	Q1_INT	reflection	You focused on your actions. That shows ownership.			
 R1_EXT	Q1_EXT	reflection	You noticed external factors. Try focusing on controllables.			
 B1	R1_INT	bridge	Now let’s look at your work approach.			
 B1B	R1_EXT	bridge	Now let’s look at your work approach.			
-Q2	B1	question	Which describes you best?	I helped others|I did extra work|I deserved more credit|Others didn’t contribute		
-D2	Q2	decision				
-Q2_CONTR	D2	question	Why did you do that?	To help team|To improve results		
-Q2_ENT	D2	question	Why do you feel that?	I wasn’t recognized|Others were unfair		
+Q2	B1	question	Which describes you best?	I helped others|I did extra work|I deserved more credit|Others didn’t contribute			
+D2	Q2	decision					
+Q2_CONTR	D2	question	Why did you do that?	To help team|To improve results			
+Q2_ENT	D2	question	Why do you feel that?	I wasn’t recognized|Others were unfair			
 R2_CONTR	Q2_CONTR	reflection	You show contribution mindset.			
 R2_ENT	Q2_ENT	reflection	Watch for entitlement patterns.			
 B2	R2_CONTR	bridge	Let’s reflect on your interactions.			
 B2B	R2_ENT	bridge	Let’s reflect on your interactions.			
-Q3	B2	question	How did you treat others?	Helped actively|Neutral|Ignored|Got irritated		
-D3	Q3	decision				
-Q3_HIGH	D3	question	Why did you help?	Team success|Shared goals		
-Q3_LOW	D3	question	Why this response?	Stress|Time pressure		
+Q3	B2	question	How did you treat others?	Helped actively|Neutral|Ignored|Got irritated			
+D3	Q3	decision					
+Q3_HIGH	D3	question	Why did you help?	Team success|Shared goals			
+Q3_LOW	D3	question	Why this response?	Stress|Time pressure			
 R3_HIGH	Q3_HIGH	reflection	You show strong team awareness.			
 R3_LOW	Q3_LOW	reflection	Be mindful of your reactions.			
 SUMMARY	R3_HIGH	summary	You showed ownership, contribution, and team awareness.			
